@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#867AEAD9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="108dp"
+        android:gravity="center"
+        android:background="#9DD2EA"
+        android:text="Bienvenido al Examen: "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtBienvenido"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E2ADEC"
+        android:text="Juego de la 21"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+    <TextView
+        android:id="@+id/txtConteo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="0"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBienvenido"
+        app:layout_constraintVertical_bias="0.243"
+        tools:layout_editor_absoluteX="26dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
